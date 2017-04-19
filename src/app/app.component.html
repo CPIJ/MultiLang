@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MultiLang</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">{{ "home" | translate }}</a></li>
+      <li> <a> {{ "about" | translate }} </a></li>
+      <li><a> {{ "contact" | translate }} </a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a (click)="changeLanguage('nl')">NL</a></li>
+      <li><a (click)="changeLanguage('en')">EN</a></li>
+      <li><a (click)="changeLanguage('br')">BR</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h1> {{ "header1" | translate }} </h1>
+  <p> {{ "body1" | translate }} </p>
+  <button class="btn btn-default">{{ "button" | translate }}</button>
+</div>
